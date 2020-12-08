@@ -1,0 +1,12 @@
+name = "Le Bloge"
+license = "MIT"
+licenselink = "https://github.com/ezitisitis/le-bloge/blob/master/LICENSE.md"
+description = "Blog template"
+homepage = "Website of your theme"
+tags = ["website", "responsive", "blog", "personal"]
+features = ["posts"]
+min_version = "0.79.0"
+
+authors = [
+  {name = "Marks Bogdanovs", homepage = "ezitisitis.com"},
+]
