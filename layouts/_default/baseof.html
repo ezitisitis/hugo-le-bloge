@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+    {{ $main := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | toCSS }}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
   </head>
   <body>
     {{ block "main" . }}
