@@ -5,44 +5,44 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
   color: $dark;
 }
 
 h1 {
   font-size: step(6);
   line-height: step(8);
-  margin-bottom: step(5)
+  margin-top: step(0);
+  margin-bottom: step(5);
 }
 
 h2 {
   font-size: step(5);
   line-height: step(6);
-  margin-bottom: step(4);
+  margin: step(4) auto;
 }
 
 h3 {
   font-size: step(4);
   line-height: step(5);
-  margin-bottom: step(3);
+  margin: step(3) auto;
 }
 
 h4 {
   font-size: step(3);
   line-height: step(4);
-  margin-bottom: step(3);
+  margin: step(3) auto;
 }
 
 h5 {
   font-size: step(2.5);
   line-height: step(3);
-  margin-bottom: step(3);
+  margin: step(3) auto;
 }
 
 h6 {
   font-size: step(2);
   line-height: step(2);
-  margin-bottom: step(3);
+  margin: step(3) auto;
 }
 
 p {
