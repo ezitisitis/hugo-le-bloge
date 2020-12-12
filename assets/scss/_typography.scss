@@ -68,6 +68,7 @@ ul, ol {
     font-size: step(2);
     line-height: step(3);
     margin-bottom: step(1);
+    color: $primary;
   }
 }
 
@@ -77,8 +78,7 @@ ul {
 
   li {
     position: relative;
-    padding-left: step(3.5);
-    color: $primary;
+    padding-left: step(3.5);  
       
     &::before {
       content: '';
