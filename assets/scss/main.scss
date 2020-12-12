@@ -4,5 +4,19 @@
 @import "typography";
 
 body {
-  background:white;
+}
+
+.post{
+  &_header {
+    margin-top: step(5);
+    margin-bottom: step(6);
+
+    h1 {
+      margin-bottom: step(1);
+    }
+
+    .posted {
+      margin-top: 0;
+    }
+  }
 }
