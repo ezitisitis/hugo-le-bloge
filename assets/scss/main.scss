@@ -4,6 +4,15 @@
 @import "typography";
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  background: $body;  
+}
+
+main {
+  max-width: 720px;
+  margin: auto step(1);
 }
 
 .post{
