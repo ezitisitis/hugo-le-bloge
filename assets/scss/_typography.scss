@@ -92,3 +92,23 @@ ul {
     }
   }
 }
+
+blockquote {
+  border-left: step(0.5) $primary solid;
+  padding: step(2) step(3);
+  margin: step(0) step(0) step(3);
+  font-size: step(2);
+  line-height: step(3);
+  font-style: italic;
+}
+
+pre {
+  border-radius: step(1);
+  padding: step(2);
+}
+
+pre {
+  color: $pre_color;
+  line-height: step(3);
+  background: $pre_background;
+}
