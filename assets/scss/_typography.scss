@@ -57,4 +57,34 @@ p {
   opacity: .5;
 }
 
+ul, ol {
+  margin: step(3) auto;
 
+  li {
+    font-size: step(2);
+    line-height: step(3);
+    margin-bottom: step(1);
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: step(0);
+
+  li {
+    position: relative;
+    padding-left: step(3.5);
+    color: $primary;
+      
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('/svg/chevron-right.svg');
+      width: step(3);
+      height: step(3);
+      position: absolute;
+      left: step(0);
+      top: step(0);
+    }
+  }
+}
