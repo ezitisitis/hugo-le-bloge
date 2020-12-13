@@ -71,6 +71,11 @@ img {
   box-shadow: 0 step(0.5) step(1) rgba(23,18,25,.25)
 }
 
+.navigation {
+  background: #FAFAFA;
+  box-shadow: 0 4px 8px rgba(23,18,25,.25);
+}
+
 @media screen and (min-width: 960px) {
   body {
     grid-template-columns: 240px auto;
