@@ -50,9 +50,18 @@ p {
   line-height: step(3);
   margin-bottom: step(3);
   color: $primary;
-  
+    
   code {
     padding: step(0);
+  }
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+    
+  &::hover {
+    text-decoration: underline;
   }
 }
 
