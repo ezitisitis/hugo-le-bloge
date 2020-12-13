@@ -103,4 +103,4 @@ A horizontal rule follows.
 
 And images can be specified like so:
 
-![example image](https://github.com/ezitisitis/le-bloge/blob/add-single-post/images/sample-image.jpg?raw=true "Image by Florian Klauer")
+![example image](https://github.com/ezitisitis/le-bloge/blob/master/images/sample-image.jpg?raw=true "Image by Florian Klauer")
