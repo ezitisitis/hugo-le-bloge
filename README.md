@@ -20,7 +20,7 @@ theme:
 ### As Git Submodule
 
 ```bash
-$ git submodule **INSERT_HTTPS_URL_HERE** theme/le-bloge
+$ git submodule https://github.com/ezitisitis/le-bloge.git theme/le-bloge
 ```
 
 ## Gettings started
