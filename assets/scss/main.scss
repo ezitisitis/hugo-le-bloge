@@ -72,11 +72,30 @@ img {
 
 @media screen and (min-width: 960px) {
   body {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 240px auto;
+  }
+
+  .navigation {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 240px;
   }
 
   main {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: auto;
+  }
+
+  .post {
+    &_header {
+      margin-bottom: step(8);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    grid-template-columns: 1fr 720px 1fr;
   }
 }
