@@ -1,0 +1,71 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "typography";
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  background: #FAFAFA;  
+}
+
+main {
+  max-width: 720px;
+  margin: auto step(1);
+}
+
+.post{
+  &_header {
+    margin-top: step(5);
+    margin-bottom: step(6);
+
+    h1 {
+      margin-bottom: step(1);
+    }
+
+    .posted {
+      margin-top: 0;
+    }
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: step(3);
+
+  th, td {
+    text-align: left !important;
+    border: 1px $body solid;
+  }
+
+  thead {
+    tr {
+      background: $table_light;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background: $table_light;
+      }
+
+      &:nth-child(odd) {
+        background: $table_dark;
+      }
+    }
+  }
+}
+
+hr {
+  border:none;
+  border-top: 1px $border solid;
+  margin: step(3) auto;
+}
+
+img {
+  width: 100%;
+  border-radius: step(1);
+  box-shadow: 0 step(0.5) step(1) rgba(23,18,25,.25)
+}
