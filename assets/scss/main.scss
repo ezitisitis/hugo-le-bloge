@@ -108,9 +108,22 @@ img {
   }
 
   .navigation {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    max-width: 240px;
+    &-container {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      max-width: 240px;
+      box-shadow: none;
+    }
+
+    &-nav {
+      display: block !important;
+      margin: step(5) 0 0 step(5);
+      padding: step(0);
+    }
+  }
+
+  .hamburger {
+    display:none;
   }
 
   main {
