@@ -8,9 +8,6 @@
 
     {{ $style := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | toCSS }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-    {{ $javascript := resources.Get "js/app.js" }}
-    <script src="{{ $javascript.RelPermalink }}"></script>
   </head>
   <div class="navigation-container">
       <button id="burger" class="hamburger hamburger--spin" type="button">
@@ -31,4 +28,6 @@
     {{ block "main" . }}
     {{ end }}
   </body>
+  {{ $javascript := resources.Get "js/app.js" }}
+  <script src="{{ $javascript.RelPermalink }}"></script>
 </html>
