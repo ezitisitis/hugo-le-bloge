@@ -6,9 +6,27 @@
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-    {{ $main := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | toCSS }}
-    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+    {{ $style := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | toCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ $javascript := resources.Get "js/app.js" }}
+    <script src="{{ $javascript.RelPermalink }}"></script>
   </head>
+  <div class="navigation-container">
+      <button id="burger" class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="navigation">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}} active {{ end }}" href="{{ .URL }}" title="{{ .Title }}">
+              {{ .Name }}
+          </a>
+        {{ end }}
+      </nav>
+  </div>
   <body>
     {{ block "main" . }}
     {{ end }}
