@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   </head>
   <div class="navigation-container">
-      <button id="burger" class="hamburger hamburger--spin" type="button">
+      <button id="js-menu-button" class="hamburger hamburger--spin" type="button">
         <span class="hamburger-box">
         <span class="hamburger-inner"></span>
         </span>
       </button>
-      <nav class="navigation">
+      <nav id="js-menu-target" class="navigation">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           <a class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}} active {{ end }}" href="{{ .URL }}" title="{{ .Title }}">
