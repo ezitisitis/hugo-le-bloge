@@ -71,9 +71,35 @@ img {
   box-shadow: 0 step(0.5) step(1) rgba(23,18,25,.25)
 }
 
-.navigation {
-  background: #FAFAFA;
-  box-shadow: 0 4px 8px rgba(23,18,25,.25);
+.navigation{ 
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #FAFAFA;
+    box-shadow: 0 step(1) step(2) rgba(23,18,25,.25);
+  }
+
+  &-nav {
+    display: none;
+    padding: step(4) 0;
+    margin: auto 8px;
+    width: calc(100% - 16px);
+
+    a {
+      display: block;
+      width: 100%;
+      margin-bottom: step(2);
+      font-size: step(2.5);
+      line-height: step(3);
+      color: #333;
+    }
+  }
+}
+
+.hamburger {
+  height: 56px;
+  float: right;
 }
 
 @media screen and (min-width: 960px) {
