@@ -82,17 +82,21 @@ img {
 
   &-nav {
     display: none;
-    padding: step(4) 0;
+    padding: step(4) 0 0;
     margin: auto 8px;
     width: calc(100% - 16px);
 
-    a {
+    .link {
       display: block;
       width: 100%;
       margin-bottom: step(2);
       font-size: step(2.5);
       line-height: step(3);
       color: #333;
+
+      &:last-child {
+        margin-bottom: step(2.5);
+      }
     }
   }
 }
@@ -100,6 +104,23 @@ img {
 .hamburger {
   height: 56px;
   float: right;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-link {
+    width: step(3);
+    margin-right: step(2.5);
+    margin-bottom: step(2.5);
+  }
+
+  .icon {
+    display: block;
+    width: step(3);
+    height: step(3);
+  }
 }
 
 @media screen and (min-width: 960px) {

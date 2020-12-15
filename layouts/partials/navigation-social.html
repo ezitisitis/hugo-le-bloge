@@ -1,0 +1,9 @@
+<div class="social">
+  {{ range .Site.Params.social }}
+    <a target="_blank" href="{{ .url }}" class="social-link">
+        <svg class="icon" role="img">
+            <use xlink:href="/svg/social.svg#{{ .icon }}">
+        </svg>
+    </a>
+  {{ end }}
+</div>
