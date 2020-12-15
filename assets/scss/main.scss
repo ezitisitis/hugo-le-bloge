@@ -82,9 +82,10 @@ img {
 
   &-nav {
     display: none;
-    padding: step(4) 0 0;
-    margin: auto 8px;
+    padding: step(2) 0 0;
+    margin: auto step(1);
     width: calc(100% - 16px);
+    border-top: 1px solid rgba(60,55,68,0.05);
 
     .link {
       display: block;
