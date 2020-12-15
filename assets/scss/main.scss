@@ -2,6 +2,7 @@
 @import "mixins";
 @import "functions";
 @import "typography";
+@import "hamburgers/hamburgers";
 
 body {
   display: grid;
@@ -70,15 +71,82 @@ img {
   box-shadow: 0 step(0.5) step(1) rgba(23,18,25,.25)
 }
 
+.navigation{ 
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #FAFAFA;
+    box-shadow: 0 step(1) step(2) rgba(23,18,25,.25);
+  }
+
+  &-nav {
+    display: none;
+    padding: step(2) 0 0;
+    margin: auto step(1);
+    width: calc(100% - 16px);
+    border-top: 1px solid rgba(60,55,68,0.05);
+
+    .link {
+      display: block;
+      width: 100%;
+      margin-bottom: step(2);
+      font-size: step(2.5);
+      line-height: step(3);
+      color: #333;
+
+      &:last-child {
+        margin-bottom: step(2.5);
+      }
+    }
+  }
+}
+
+.hamburger {
+  height: 56px;
+  float: right;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-link {
+    width: step(3);
+    margin-right: step(2.5);
+    margin-bottom: step(2.5);
+  }
+
+  .icon {
+    display: block;
+    width: step(3);
+    height: step(3);
+  }
+}
+
 @media screen and (min-width: 960px) {
   body {
     grid-template-columns: 240px auto;
   }
 
   .navigation {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    max-width: 240px;
+    &-container {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      max-width: 240px;
+      box-shadow: none;
+    }
+
+    &-nav {
+      display: block !important;
+      margin: step(5) 0 0 step(5);
+      padding: step(0);
+      border-top: unset;
+    }
+  }
+
+  .hamburger {
+    display:none;
   }
 
   main {
