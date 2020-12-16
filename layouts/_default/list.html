@@ -7,6 +7,7 @@
       <article>
         <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
         {{.Content}}
+        <a class="read-more-link" href="{{ .Permalink }}">{{ i18n "readMore" }}</a>
       </article>
     {{ end }}
   </div>
