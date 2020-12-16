@@ -1,9 +1,13 @@
 {{ define "main" }}
-  <h1>Posts1</h1>
-  {{ range .Pages }}
-    <article>
+  <div class="content-container">
+    <header class="archive-header">
+        <h1>{{ i18n "posts" }}</h1>
+    </header>
+    {{ range .Pages }}
+      <article>
         <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
-      {{.Content}}
-    </article>
-  {{ end }}
+        {{.Content}}
+      </article>
+    {{ end }}
+  </div>
 {{ end }}
