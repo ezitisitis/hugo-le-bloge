@@ -11,7 +11,7 @@ body {
   background: #FAFAFA;  
 }
 
-main {
+.content-container {
   max-width: 720px;
   margin: auto step(1);
 }
@@ -29,6 +29,11 @@ main {
       margin-top: 0;
     }
   }
+}
+
+.archive-header {
+  margin-top: step(5);
+  margin-bottom: step(6);
 }
 
 table {
@@ -124,6 +129,17 @@ img {
   }
 }
 
+article {
+  margin-top: 48px;
+}
+
+.read-more-link {
+  display: block;
+  margin: step(3) step(0);
+  font-size: step(2);
+  line-height: step(3);
+}
+
 @media screen and (min-width: 960px) {
   body {
     grid-template-columns: 240px auto;
@@ -149,7 +165,7 @@ img {
     display:none;
   }
 
-  main {
+  .content-container {
     grid-column-start: 2;
     grid-column-end: 3;
     margin: auto;
@@ -159,6 +175,10 @@ img {
     &_header {
       margin-bottom: step(8);
     }
+  }
+
+  .archive-header {
+    margin-bottom: step(8);
   }
 }
 

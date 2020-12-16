@@ -1,2 +1,8 @@
 [postedOn]
 other = "Posted on"
+
+[posts]
+other = "Posts"
+
+[readMore]
+other = "Read more"

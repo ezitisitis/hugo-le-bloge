@@ -2,7 +2,7 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <main>
+  <main class="content-container">
     <header class="post_header">
       <h1>{{ .Title }}</h1>
       <p class="posted">{{ i18n "postedOn" }}: <time>{{ .PublishDate.Format "08/1/2006 4:15" }}</time></p>
