@@ -1,0 +1,64 @@
+theme = "le-bloge"
+
+# Override this settings with Your own
+title = "Le Bloge"
+languageCode = "en-us"
+baseURL = "https://example.org/"
+
+# Optional params
+[params]
+  # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
+  [[params.social]]
+    icon = "facebook"
+    title = "Facebook"
+    url = "https://facebook.com/<your username>"
+  [[params.social]]
+    icon = "twitter"
+    title = "Twitter"
+    url = "https://twitter.com/<your username>"
+  [[params.social]]
+    icon = "instagram"
+    title = "Instagram"
+    url = "https://instagram.com/<your username>"
+  [[params.social]]
+    icon = "youtube"
+    title = "YouTube"
+    url = "https://www.youtube.com/channel/<your channel>"
+  [[params.social]]
+    icon = "twitch"
+    title = "Twitch"
+    url = "https://www.twitch.tv/<your username>"
+  [[params.social]]
+    icon = "github"
+    title = "GitHub"
+    url = "https://github.com/<your username>"
+
+[[menu.main]]
+  identifier = "home"
+  name = "home"
+  title = "Home"
+  url = "/"
+
+[[menu.main]]
+  identifier = "links"
+  name = "links"
+  title = "Links"
+  url = "/links"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  title = "Blog"
+  url = "/blog"
+
+[[menu.main]]
+  identifier = "about-me"
+  name = "about me"
+  title = "About me"
+  url = "/about-me"
+
+[[menu.main]]
+  identifier = "contacts"
+  name = "contacts"
+  title = "Contacts"
+  url = "/contacts"
