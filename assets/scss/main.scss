@@ -168,7 +168,8 @@ article {
   .content-container {
     grid-column-start: 2;
     grid-column-end: 3;
-    margin: auto;
+    margin: step(0) auto;
+    width: 100%;
   }
 
   .post {
