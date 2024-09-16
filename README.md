@@ -1,4 +1,4 @@
-# Le Bloge, a theme for [Hugo](hugo), framework for fast and furious websites
+# [Abandoned] Le Bloge, a theme for [Hugo](hugo), framework for fast and furious websites
 
 This template was made with purpose for clean and simple blog creation.
 
@@ -25,4 +25,7 @@ $ git submodule https://github.com/ezitisitis/le-bloge.git theme/le-bloge
 
 ## Gettings started
 
+## Credits
+
+- [Marks Bogdanovs](https://www.ezitisitis.com)
 
